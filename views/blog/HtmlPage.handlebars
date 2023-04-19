@@ -1,0 +1,37 @@
+
+    <section id="assunto">
+
+        <div class="ConteinerTitulo"><div class="titulo"><h1>{{categoria.categoria}}</h1></div></div>
+
+        <div class="ConteinerHTML">
+           {{#each conteudo}}
+            <div class="Box">
+                
+                <div class="BoxTema">
+                    <h2>{{tag}}</h2>
+                </div>
+
+                <div class="Boxlink">
+                    <a href="/{{slug}}">Saiba mais</a>
+                </div>
+
+                <div class="BoxText">
+                    <p>{{descricao}}</p>
+                </div>
+
+                <div class="BoxData">
+                    <small>{{data}}</small>
+                    
+                </div>
+            </div>
+            {{else}}
+            <h1 style="color: white;">Sem conteudo</h1>
+            {{/each}}
+           
+          
+            
+
+            
+
+
+    </section><br><br>

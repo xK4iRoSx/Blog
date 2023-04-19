@@ -1,0 +1,89 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+const Conteudo = new Schema({
+    tituloCategoria:{
+        type:String,
+        required:true
+    },
+    titulo:{
+        type:String,
+        required:true
+    },
+    slug:{
+        type:String,
+        required:true
+    },
+    subtitulo:{
+        type:String,
+        required:true
+    },
+    texto1:{
+        type:String,
+        required:true
+    },
+    exemplo1:{
+        type:String,
+        required:true
+    },
+    imagem1:{
+        type:String,
+        required:true
+    },
+    texto2:{
+        type:String,
+        required:true 
+    },
+    nota:{
+        type:String,
+        required:true 
+    },
+    imagem2:{
+        type:String,
+        required:true
+    },
+    texto3:{
+        type:String,
+        required:true 
+    },
+    imagem3:{
+        type:String,
+        required:true
+    },
+    texto4:{
+        type:String,
+        required:true 
+    },
+    imagem4:{
+        type:String,
+        required:true
+    },
+    exemplo2:{
+        type:String,
+        required:true
+    },
+    texto5:{
+        type:String,
+        required:true 
+    },
+    resumo:{
+        type:String,
+        required:true 
+    },
+    tag:{
+        type:String,
+        required:true 
+    },
+    descricao:{
+        type:String,
+        required:true 
+    },
+    data:{
+        type:String,
+        required:true 
+    },
+
+   
+})
+
+mongoose.model('conteudos', Conteudo)

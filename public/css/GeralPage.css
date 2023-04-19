@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #00000000;
+}
+
+.ContentLogo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TituloLogo a{
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Alkatra";
+    text-decoration: none;
+}
+
+.TituloLogo strong{
+    color: goldenrod;
+}
+
+.navbar{
+    width: 60%;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Alkatra";
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #000;
+    transition: all .5s ease;
+    background-color: goldenrod;
+}
+
+.navbar a:focus{
+    color: #000;
+    transition: all .5s ease;
+    background-color: goldenrod;
+}
+
+.icons{
+    cursor: pointer;
+    width: 10%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.icons i:hover{
+    transform: scale(120%);
+    color: goldenrod;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== CAPA ==================>*/
+
+.ConteinerCapa{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-gradiente-de-grade-digital-futurista-azul-escuro_53876-129728.jpg?w=740&t=st=1681325705~exp=1681326305~hmac=50190e6b7e6561192728bf9b1ace31f55b58734048253b1189f9493a391a844e) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.custom-shape-divider-bottom-1681134761 {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681134761 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1681134761 .shape-fill {
+    fill: #000;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== TITULOS ==================>*/
+
+.ConteinerTitulo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo h1{
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Alkatra";
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== TAG A ==================>*/
+#assunto{
+    
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ConteinerTagA{
+    width: 70%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ConteinerTagA p{
+    color: #fff;
+    text-align: justify;
+}
+.ConteinerTagA strong{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.ConteinerTagA h1{
+    color: #fff;
+}
+
+
+.ConteinerTagA img{
+    width: 90%;
+}
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap:1rem;
+    
+}
+
+.BoxTituloIcons{    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap:1rem;
+    
+}
+
+
+
+
+.ConteinerLogoFt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap:1rem;
+   
+}
+
+.ConteinerLogoFt span{
+    color: #fff;
+}
+
+.footerTitulo{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BoxIncosFt,
+.BoxlogoFt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.BoxlogoFt strong{
+    color: goldenrod;
+}
+
+.BoxIncosFt i,
+.BoxlogoFt h1{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.BoxIncosFt i:hover{
+    color: goldenrod;
+}
+
+.ConteinerLR{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.footerTitulo h1{
+    color: #fff;
+}
+
+.ConteinerLR a{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.ConteinerLR a:hover{
+    color: goldenrod;
+}

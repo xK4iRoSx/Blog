@@ -1,0 +1,65 @@
+   
+    <section id="AssuntoHtml">
+
+        <div class="ConteinerTitulo"><div class="titulo"><h1>Crie seu Blog</h1></div></div>
+
+        <div class="ConteinerHtml">
+
+            <form action="/admin/conteudo" method="post" enctype="multipart/form-data">
+
+                    
+                <select name="tituloCategoria" id="tituloCategoria">
+                    {{#each  categoria}}
+                    <option value="{{_id}}">{{categoria}}</option>
+                   {{else}}
+                    <option value="0">Sem categoria cadastrada</option>
+                   {{/each }}
+                </select>
+                 
+                <input type="text" name="titulo" id="titulo" placeholder="Digite seu Titulo..." required>
+
+                <input type="text" name="subtitulo" id="subtitulo" placeholder="Digite seu Subtitulo..."required>
+
+                <input type="text" name="TextoUm" id="TextoUm" placeholder="Digite Texto..."required>
+
+                <input type="text" name="exemplo1" id="exemplo2" placeholder="Digite um exemplo..."required>
+
+                <input type="file" name="img" id="img1"required>
+
+                <input type="text" name="TextoDois" id="TextoDois" placeholder="Digite um Texto Dois..."required>
+
+                <input type="text" name="nota" id="nota" placeholder="Digite uma Nota sobre o Texto..."required>
+
+                <input type="file" name="img" id="img2"required>
+
+                <input type="text" name="TextoTres" id="TextoTres" placeholder="Digite um Três Texto sobre o Texto..."required>
+
+                <input type="file" name="img" id="img3"required>
+
+                <input type="text" name="TextoQuatro" id="TextoQuatro" placeholder="Digite um Quatro Texto sobre o Texto..."required>
+
+                <input type="file" name="img" id="img4"required>
+
+                <input type="text" name="exemplo2" id="exemplo2" placeholder="Digite um exemplo..."required>
+
+                <input type="text" name="TextoQuinto" id="TextoQuinto" placeholder="Digite um Quinto Texto sobre o Texto..."required>
+
+                <input type="text" name="ResumoFinal" id="ResumoFinal" placeholder="Digite um Resumo..."required>
+
+                <div class="ConteinerTitulo"><div class="titulo"><h1>TAGS</h1></div></div>
+
+                <input type="text" name="tag" id="tag" placeholder="Tag Titulo..."required>
+
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição..."required>
+                
+                <input type="date" name="data" id="data"required>
+
+                <button submit="enviar">Enviar</button>
+
+            </form>
+            
+        </div>
+    </section>
+
+
+    

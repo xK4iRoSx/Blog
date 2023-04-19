@@ -1,0 +1,43 @@
+   <header class="header">
+        <div class="ContentLogo"><div class="TituloLogo"><a>A.R <strong>Blog</strong></a></div></div>
+
+        <nav class="navbar">
+            <a href="#inicio">Início</a>
+
+            <li class="BoxLi">
+
+                <a href="#assunto" class="LinkNav">Assuntos<i class='bx bx-chevron-down'></i></a>
+            
+                <ul class="BoxLinksAssuntos">
+                   
+                          {{#each teste}}                                   
+                                        <a href="admin/{{slug}}">{{categoria}}</a>
+                          {{else}}
+                          <a href="">Erro Interno</a>
+                          {{/each}}
+                           
+                          
+                           
+                  
+                    
+                </ul>
+            
+            </li>
+              
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contatos</a>
+        </nav>
+
+        <div class="icons">
+            <i class='bx bx-menu' onclick="openMenu()"></i>
+            <i class='bx bx-x' id="X" onclick="CloseMenu()"></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bx-sun'></i>
+            <i class='bx bx-moon' id="moon"></i>            
+        </div>
+
+    </header>
+
+
+ 
+

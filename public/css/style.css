@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;
+}
+
+body{
+    background-color: #000;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #00000000;
+}
+
+.ContentLogo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TituloLogo a{
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Alkatra";
+}
+
+.TituloLogo strong{
+    color: goldenrod;
+}
+
+.navbar{
+    width: 60%;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: "Alkatra";
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #000;
+    transition: all .5s ease;
+    background-color: goldenrod;
+}
+
+.navbar a:focus{
+    color: #000;
+    transition: all .5s ease;
+    background-color: goldenrod;
+}
+
+.icons{
+    cursor: pointer;
+    width: 10%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.icons i:hover{
+    transform: scale(120%);
+    color: goldenrod;
+}
+
+.BoxLi{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.BoxLinksAssuntos{    
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    top: 60px;
+    left: 46%;
+    background: #00000000;
+}
+
+.BoxLi:hover .BoxLinksAssuntos{
+    display: flex;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== MOBILE ==================>*/
+
+.ConteinerMobile{
+    width: 35%;
+    height: 100%;
+    z-index: 1;
+    top: 0; left: 0;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+.BoxMobile{
+    width: 100%;
+    height: 70%;
+    gap: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: goldenrod;
+}
+
+.BoxLimobile{
+    gap: 5px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+
+.BoxMobile li,
+.BoxMobile a{
+    display: inline-block;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+    color: #fff;
+    padding: 9px;
+    font-size: 1.3rem;
+    background-color:#000 ;
+}
+
+.BoxMobile a:hover{
+    color: #000;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.BoxLinksAssuntosmobile{    
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    background: #00000000;
+    transition: all .5s ease;
+}
+
+.BoxLimobile:hover .BoxLinksAssuntosmobile{
+    transition: all .5s ease;
+    display: flex;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== CAPA ==================>*/
+
+.ConteinerCapa{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    background-image: url(../img/capa.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.custom-shape-divider-bottom-1681134761 {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681134761 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1681134761 .shape-fill {
+    fill: #000;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== TITULOS ==================>*/
+
+.ConteinerTitulo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo h1{
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Alkatra";
+}
+/* CONFIGURAÇÃO DO CONTEINER <=============== ASSUNTOS ==================>*/
+#assunto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ConteinerCSS,
+.ConteinerHTML{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Box{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    gap: 2rem;
+    display: flex;
+    text-align: center;
+    /* align-items: start; */
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 1% 10%;
+}
+
+.Box:hover{
+    transform: scale(105%);
+}
+
+.BoxText{
+    height: 100%;
+}
+.BoxData,
+.Boxlink,
+.BoxTema{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.BoxTema h1{
+    color: #fff;
+}
+
+.BoxTema h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.BoxText p{color: #fff;}
+.BoxData small{color: #fff;}
+
+.Boxlink a{
+    color: #fff; 
+    text-decoration: none; 
+    background-color: rgba(224, 224, 224, 0.253); 
+    border-radius: 5px;
+    padding: 10px; 
+}
+.Boxlink a:hover{
+    transition: all .5s ease;
+    background-color: goldenrod;
+}
+
+/* CONFIGURAÇÃO DO CONTEINER <=============== APRESENTAÇÃO ==================>*/
+
+.ContenerApr{
+    width: 100%;
+    height: 450px;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    background-image: url(https://img.freepik.com/fotos-gratis/pessoa-com-vista-superior-escrevendo-no-laptop-com-espaco-de-copia_23-2148708035.jpg?w=740&t=st=1681323712~exp=1681324312~hmac=beec1bed4e3f4438c4603eeab0d45db4534305a0b176b022ef76ae3d81b92c14);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.BoxTextApr{
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    text-align: end;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.BoxTextApr h1{
+    display: flex;
+    font-size: 3.9rem;
+}
+
+.BoxTextApr p{
+    font-size: 1rem;
+    display: flex;
+    text-align: justify;
+}
+
+.Btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Btn a{
+    color: #fff;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #000;
+}
+
+.Btn a:hover{
+    color: #000;
+    background-color: goldenrod;
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.BoxTituloIcons{    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap:1rem;
+}
+
+
+.ConteinerLogoFt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.ConteinerLogoFt span{
+    color: #fff;
+}
+
+.footerTitulo{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BoxIncosFt,
+.BoxlogoFt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.BoxlogoFt strong{
+    color: goldenrod;
+}
+
+.BoxIncosFt i,
+.BoxlogoFt h1{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.BoxIncosFt i:hover{
+    color: goldenrod;
+}
+
+.ConteinerLR{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.footerTitulo h1{
+    color: #fff;
+}
+
+.ConteinerLR a{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.ConteinerLR a:hover{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+    .TituloLogo,
+    .header{
+        width: 100%;
+    }
+
+    .ContentLogo{
+        width: 20%;
+    }
+
+    #X,
+    #moon{
+        display: none;
+    }
+       
+    .ConteinerTitulo{
+        width: 100%;
+    }   
+
+    .titulo{
+        width: 100%;
+    }
+
+    .titulo h1{
+        font-size: 3rem;
+    }
+
+    .ConteinerCSS,
+    .ConteinerHTML{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        gap: 1rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+    
+    .Box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BoxTextApr{
+        width: 50%;
+    }
+
+    .BoxTextApr h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:900px){
+    .TituloLogo,
+    .header{
+        width: 100%;
+    }
+    .icons{
+        width: 30%;
+    }
+
+    #moon{
+        display: none;
+    }
+
+    .ContentLogo{
+        width: 20%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .ConteinerTitulo{
+        width: 100%;
+    }   
+
+    .titulo{
+        width: 100%;
+    }
+
+    .titulo h1{
+        font-size: 2rem;
+    }
+
+    .ConteinerCSS,
+    .ConteinerHTML{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        gap: 1rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .Box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BoxTextApr{
+        width: 50%;
+    }
+
+    .BoxTextApr h1{
+        font-size: 2rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ConteinerLogoFt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .BoxTituloIcons{        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footerTitulo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ConteinerLR{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media(max-width:700px){
+    .TituloLogo,
+    .header{
+        width: 100%;
+    }
+    .icons,
+    .ContentLogo{
+        width: 50%;
+    }
+
+    #moon{
+        display: none;
+    }
+     
+    .navbar{
+        display: none;
+    }
+
+    .ConteinerMobile{
+        width: 60%;
+    }
+
+    .ConteinerTitulo{
+        width: 100%;
+    }   
+
+    .titulo{
+        width: 100%;
+    }
+
+    .titulo h1{
+        font-size: 1.3rem;
+    }
+
+    .ConteinerCSS,
+    .ConteinerHTML{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        gap: 1rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+    }
+    
+    .Box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BoxTextApr{
+        width: 100%;
+    }
+
+    .BoxTextApr h1{
+        font-size: 2rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ConteinerLogoFt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .BoxTituloIcons{        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerTitulo{
+        width: 100%;
+    }
+
+    .ConteinerLR{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+}
